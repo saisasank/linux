@@ -1,0 +1,49 @@
+whoami -- used to print the loggedin user name
+
+uname -s -- to know the kernel name, you can use -s parameter
+uname -r -- to know what kernel release you’re using, just use -r parameter
+uname -v -- to fetch the kernel version. use -v parameter
+uname -n -- -n will give you the node hostname
+uname -m -- to know what kind of machine you’re using, hardware name
+uname -i -- with hardware name, -i parameter will show you hardware platform
+uname -p -- to see processor type, you can use -p parameter
+uname -o -- to see what operating system you are running
+uname -a -- one parameter that can reveal all information
+
+uptime -- tells you how long the system has been running
+uptime -p -- show uptime in pretty format
+uptime -s -- system up since, in yyyy-mm-dd HH:MM:SS format
+
+useradd usr1 -- add new user usr1 with default settings
+useradd usr1 -d /home/usr1 -- create the new user’s home dir in /home
+useradd usr1 -e 2009-04-30 -- from 30/4/2009 the user acc will be disabled
+useradd usr1 -f 6 -- After passwd expires, system will allow the user to login for 6 days with a warning to change his passwd
+useradd usr1 -g staff -- Set user1 group as staff
+useradd usr1 -p $1$d8 -- Create the usr1 with the given encrypted password. For No passwd, acc disabled
+
+userdel loginname -- Delete the user account
+userdel -r loginname -- delete the user account together with user’s home directory and all files inside it
+userdel -f loginname -- for the deletion even the user is still log in, it will force to delete the user’s home directory and files as well<this option is dangerous use with caution>pwd -- to know which directory you are in
+
+
+
+
+
+
+
+ls -- to know what files are in the directory you are in
+ls -a -- to see all the hidden files
+cd -- go to a directory
+cd .. -- to go back from a folder to the folder before that
+mkdir -- to create a folder or a directory
+rmdir -- to delete a directory(can only be used to delete an empty directory)
+rm --  to delete files and directories, to delete a directory containing files
+rm -r -- to delete just the directory Example: rm -r New\Folder
+touch -- used to create a file. It can be anything, from an empty txt file to an empty zip file
+man -- to know more about a command and how to use it
+--help -- typing in the command name and this argument helps it show which ways the command can be used
+cp <loc of file that is being copied> <where to copy> -- to copy files
+mv <loc of file that is being copied> <where to copy> -- to move files (it is also used to rename the file Example: mv txt.txt newtxt.txt)
+locate -- to locate a file in a linux system, just like the search command in windows
+locate -i <file name> -- to locate the file and ignore the case
+locate -i *hello*this” -- if you remember two words, you can separate them using an asterisk *, for example, to locate a file containing the words "hello" and "this"
